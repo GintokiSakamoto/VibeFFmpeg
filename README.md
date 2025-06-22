@@ -1,0 +1,3 @@
+# 🎵 VibeFFmpeg
+
+VibeFFmpeg makes FFmpeg easy through natural language or simple UI...
