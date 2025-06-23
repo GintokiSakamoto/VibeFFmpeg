@@ -8,7 +8,9 @@ def run_cli():
     parser.add_argument('--cmd', required=True, help="Command to execute (e.g., 'extract audio', 'convert video')")
     args = parser.parse_args()
 
-    ffmpeg_args, output_file = CommandParser(args.cmd).parse()
+    cmd_parser = CommandParser(args.cmd, args.input)
+    ffmpeg_args, output_file = cmd_parser.parse()
+
     if not ffmpeg_args:
         print("Invalid command or unsupported format.")
         return
