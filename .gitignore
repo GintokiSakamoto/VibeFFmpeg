@@ -1,23 +1,44 @@
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.pyc
+*.py[cod]
+*$py.class
 
+# Virtual Environments
 venv/
 .env/
 .venv/
 
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE settings (VS Code, Pycharm)
 .vscode/
 .idea/
 .DS_Store
 
+# Distribution / Packaging
+build/
+dist/
+*.egg-info/
+
+# Local media files
 *.mp4
 *.mp3
 *.wav
 *.mkv
 *.flac
 
+# FFmpeg outputs
+trimmed_output.*
+extracted_audio.*
+*_converted.*
 extracted_audio.*
 cropped_output.*
 
+# Logs
 *.log
 *.tmp
 *.bak
