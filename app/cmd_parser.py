@@ -95,7 +95,6 @@ class CommandParser:
         if first_match:
             duration = first_match.group(1)
             start_time = "00:00:00"
-            end_time = f"{duration}s"
 
         #last N seconds, etc are not implemented yet
 
