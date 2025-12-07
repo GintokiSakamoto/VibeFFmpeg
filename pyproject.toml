@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vibeffmpeg"
+version = "0.1.0"
+description = "FFmpeg made simple. Just type what you want."
+readme = "README.md"
+authors = [
+  { name = "GintokiSakamoto", email = "GintokiSakamoto@outlook.com" },
+]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.7"
+dependencies = [
+    "rapidfuzz"
+]
+
+[project.scripts]
+# This creates the 'vibeffmpeg' terminal command and links it to your function
+vibeffmpeg = "vibeffmpeg.ui.cli:run_cli"
