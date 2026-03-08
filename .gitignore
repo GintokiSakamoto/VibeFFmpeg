@@ -8,6 +8,7 @@ __pycache__/
 venv/
 .env/
 .venv/
+vibe/
 
 # Testing & Coverage
 .pytest_cache/
@@ -42,3 +43,4 @@ cropped_output.*
 *.log
 *.tmp
 *.bak
+
